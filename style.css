@@ -45,4 +45,7 @@ overflow-wrap: break-word;
 isolation: isolate;
 }
 
-
+svg {
+    width: 2rem; 
+    height: 2rem; 
+}
