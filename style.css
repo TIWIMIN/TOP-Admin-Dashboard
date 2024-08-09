@@ -50,6 +50,7 @@ isolation: isolate;
 html {
     width: 100vw; 
     height: 100vh;
+    --gray: rgb(229, 228, 233);
 }
 
 svg {
@@ -73,7 +74,7 @@ img {
     grid-area: 1 / 2 / 2 / 3; 
     display: grid; 
     grid-template-rows: 1fr 1fr; 
-    box-shadow: 0 3px 1rem rgb(216, 218, 235);
+    box-shadow: 1rem 3px 1rem var(--gray);
     padding-left: 2rem;
 }
 
@@ -169,4 +170,38 @@ img {
 .main {
     grid-area: 2 / 2 / 3 / 3; 
     display: grid; 
+    grid-template: 3rem 1fr 3rem 1fr / 4fr 1fr; 
+    padding-top: 3rem;
+    background: var(--gray); 
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.projects {
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.card-wrapper {
+    grid-area: 2 / 1 / 5 / 2;
+    display: grid;
+}
+
+.card {
+    background: white; 
+}
+
+.announcements {
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.announcement-card {
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+.trending {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.trending-card {
+    grid-area: 4 / 2 / 5 / 3; 
 }
